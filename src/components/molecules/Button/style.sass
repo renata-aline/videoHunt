@@ -1,0 +1,23 @@
+@use'./variables'
+
+.button
+    width: 100%
+    background: variables.$gradient
+    font-weight: 600
+    background-color: red
+    padding: 10px
+    border-radius: 5px
+    border: none
+    color: variables.$text-color
+    margin: 16px
+    transition: background 0.8s
+
+.button:hover
+    animation: scaleButton 0.8s alternate 
+
+@keyframes scaleButton
+    0%
+        transform: scale(1)
+
+    100%
+        transform: scale(1.03)
