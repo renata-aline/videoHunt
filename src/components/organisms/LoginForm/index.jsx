@@ -2,6 +2,7 @@
 import Logo from "../../molecules/Logo";
 import Input from "../../molecules/Input";
 import Button from "../../molecules/Button";
+import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion"
 
@@ -20,7 +21,7 @@ function LoginForm() {
          >
         
         <Logo />
-        <h1>VideoHunt</h1>
+        
         </motion.div>
       </header>
       
@@ -42,7 +43,7 @@ function LoginForm() {
 
         </div>
         <Button />
-        <a href="#">Não tem conta? Registre-se</a> 
+        <Link to="/signup">Não tem conta? Registre-se</Link> 
        </form>
     </>
   );

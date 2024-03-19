@@ -1,3 +1,4 @@
+import "./style.sass";
 
 const Button = () => {
     return (
