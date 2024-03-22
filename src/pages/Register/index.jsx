@@ -1,12 +1,12 @@
 
-import LoginForm from "../../components/organisms/LoginForm"
+import RegisterForm from "../../components/organisms/RegisterForm"
 import "../../styles/app.sass" 
 
 const Signup = () => {
   return (
     <>
-    <h1>signup</h1>
-    <LoginForm />
+    <h1>registrar</h1>
+    <RegisterForm />
     </>
   )
 }

@@ -1,13 +1,12 @@
-
 import Logo from "../../molecules/Logo";
 import Input from "../../molecules/Input";
 import Button from "../../molecules/Button";
-import { Link } from "react-router-dom";
+
 
 import { motion } from "framer-motion"
 
 
-function LoginForm() {
+function RegisterForm() {
   return (
     <>
       <header className="header">
@@ -27,6 +26,12 @@ function LoginForm() {
       
       <form className="form">
         <div className="inputContainer">
+        <Input
+            type="name"
+            name="email"
+            id="email"
+            placeholder="Digite seu nome"
+          />
           <Input
             type="email"
             name="email"
@@ -39,14 +44,19 @@ function LoginForm() {
             id="password"
             placeholder="Digite sua senha"
           />
+           <Input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Confirme sua senha"
+          />
 
 
         </div>
-        <Button />
-        <Link to="/Register">Não tem conta? Registre-se</Link> 
+        <Button /> 
        </form>
     </>
   );
 }
 
-export default LoginForm;
+export default RegisterForm;
